@@ -7,7 +7,7 @@
 #define MAXLENGTH_COM 100
 #define MAX_ARG 7
 
-static const char *FILE_PATH = "/root/linux/simCommand/";
+static const char *FILE_PATH = "/home/charie/linux/simCommand/";
 
 void info_shell() {
     char *username, hostname[50], pwd[50], type;
@@ -29,7 +29,7 @@ void info_shell() {
     else {
         type = '$';
     }
-    
+
     printf("rieShell-[%s@%s %s]%c ", username, hostname, pwd, type);
 
 }
@@ -55,11 +55,10 @@ int commandAnalyze(char *path, char *parameters[]) {
 
     parameters[index] = (char *) malloc(4);
     parameters[index] = NULL;
-    strcpy(path, FILE_PATH);
-    strcat(path, parameters[0]);
+    strcpy(path, parameters[0]);
     printf("path:%s\n", path);
     for (i = 0; i <= index; i++) {
-         printf("%d-%s\n", i, parameters[i]);  
+         printf("%d-%s\n", i, parameters[i]);
     }
 
     return index;
@@ -75,37 +74,41 @@ int main(int argc, char *argv[]) {
 
     while(1) {
         length = commandAnalyze(path, parameters);
-        if (strcmp(path, "/root/linux/simCommand/exit") == 0) {
+        if (strcmp(path, "exit") == 0) {
             exit(EXIT_SUCCESS);
         }
-        if ((pid = fork()) < 0) {
-            perror("fork");
-            exit(EXIT_FAILURE);
-        }
-        else if (pid > 0) {
-            waitpid(pid, &status, 0);
-        }
-        else {
-            if (strcmp(path, "/root/linux/simCommand/cd") == 0) {
-                if (length > 1) {
-                    if (strcmp(parameters[1], "..") == 0) {
-                        chdir("..");
-                    }
-                    else {
-                        if (chdir(parameters[1]) != 0) {
-                            perror("No such file");
-                        }
-                    }
+        else if (strcmp(path, "cd") == 0) {
+            if (length > 1) {
+                if (strcmp(parameters[1], "..") == 0) {
+                    chdir("..");
                 }
                 else {
-                    chdir("/root");
+                    if (chdir(parameters[1]) != 0) {
+                        perror("No such file");
+                    }
                 }
             }
-            else{
-                if (execvp(path, parameters) == -1) {
+            else {
+                chdir(getenv("HOME"));
+            }
+        }
+
+        else {
+            char temp[50];
+            strcpy(temp, FILE_PATH);
+            strcat(temp, path);
+            if ((pid = fork()) < 0) {
+                perror("fork");
+                exit(EXIT_FAILURE);
+            }
+            else if (pid > 0) {
+                waitpid(pid, &status, 0);
+            }
+            else {
+                if (execvp(temp, parameters) == -1) {
                     printf("command not find\n");
-                }   
-            } 
+                }
+            }
         }
     }
 
