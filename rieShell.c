@@ -92,7 +92,6 @@ int main(int argc, char *argv[]) {
                 chdir(getenv("HOME"));
             }
         }
-
         else {
             char temp[50];
             strcpy(temp, FILE_PATH);
@@ -105,6 +104,7 @@ int main(int argc, char *argv[]) {
                 waitpid(pid, &status, 0);
             }
             else {
+
                 if (execvp(temp, parameters) == -1) {
                     printf("command not find\n");
                 }

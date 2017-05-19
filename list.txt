@@ -1,0 +1,49 @@
+总用量 52
+-rwxrwxr-x 1 charie charie 8960 5月  17 09:03 a.out
+-rw-rw-r-- 1 charie charie   20 5月  17 00:47 infile.txt
+-rw-r--r-- 1 charie charie    0 5月  17 09:03 list.txt
+-rw-rw-r-- 1 charie charie  894 5月  17 09:02 redirectLs.c
+-rw-rw-r-- 1 charie charie  380 5月  17 00:47 restart.c
+-rw-rw-r-- 1 charie charie  103 5月  17 00:47 result.txt
+-rw-rw-r-- 1 charie charie 1185 5月  17 00:47 rieDaemon.c
+-rw-rw-r-- 1 charie charie 1362 5月  17 00:47 rieRedirect.c
+-rw-rw-r-- 1 charie charie 2774 5月  17 09:02 rieShell.c
+drwxrwxr-x 2 charie charie 4096 5月  17 00:47 simCommand
+-rw-rw-r-- 1 charie charie 5253 5月  17 00:47 stuMes.c
+总用量 52
+-rwxrwxr-x 1 charie charie 8960 5月  17 09:03 a.out
+-rw-rw-r-- 1 charie charie   20 5月  17 00:47 infile.txt
+-rw-r--r-- 1 charie charie    0 5月  17 09:03 list.txt
+-rw-rw-r-- 1 charie charie  894 5月  17 09:02 redirectLs.c
+-rw-rw-r-- 1 charie charie  380 5月  17 00:47 restart.c
+-rw-rw-r-- 1 charie charie  103 5月  17 00:47 result.txt
+-rw-rw-r-- 1 charie charie 1185 5月  17 00:47 rieDaemon.c
+-rw-rw-r-- 1 charie charie 1362 5月  17 00:47 rieRedirect.c
+-rw-rw-r-- 1 charie charie 2774 5月  17 09:02 rieShell.c
+drwxrwxr-x 2 charie charie 4096 5月  17 00:47 simCommand
+-rw-rw-r-- 1 charie charie 5253 5月  17 00:47 stuMes.c
+总用量 56
+-rwxrwxr-x 1 charie charie 8960 5月  17 09:12 a.out
+-rw-rw-r-- 1 charie charie   20 5月  17 00:47 infile.txt
+-rw-r--r-- 1 charie charie 1294 5月  17 09:03 list.txt
+-rw-rw-r-- 1 charie charie  893 5月  17 09:12 redirectLs.c
+-rw-rw-r-- 1 charie charie  380 5月  17 00:47 restart.c
+-rw-rw-r-- 1 charie charie  103 5月  17 00:47 result.txt
+-rw-rw-r-- 1 charie charie 1185 5月  17 00:47 rieDaemon.c
+-rw-rw-r-- 1 charie charie 1359 5月  17 09:11 rieRedirect.c
+-rw-rw-r-- 1 charie charie 2774 5月  17 09:02 rieShell.c
+drwxrwxr-x 2 charie charie 4096 5月  17 00:47 simCommand
+-rw-rw-r-- 1 charie charie 5253 5月  17 00:47 stuMes.c
+总用量 68
+-rw-rw-r-- 1 charie charie   20 5月  17 00:47 infile.txt
+-rw-r--r-- 1 charie charie 1941 5月  17 09:12 list.txt
+-rwxrwxr-x 1 charie charie 8960 5月  17 09:28 redirectLs
+-rw-rw-r-- 1 charie charie  893 5月  17 09:16 redirectLs.c
+-rw-rw-r-- 1 charie charie  380 5月  17 00:47 restart.c
+-rw-rw-r-- 1 charie charie  103 5月  17 00:47 result.txt
+-rw-rw-r-- 1 charie charie 1185 5月  17 00:47 rieDaemon.c
+-rwxrwxr-x 1 charie charie 9072 5月  17 09:28 rieRedirect
+-rw-rw-r-- 1 charie charie 1359 5月  17 09:11 rieRedirect.c
+-rw-rw-r-- 1 charie charie 2774 5月  17 09:27 rieShell.c
+drwxrwxr-x 2 charie charie 4096 5月  17 00:47 simCommand
+-rw-rw-r-- 1 charie charie 5253 5月  17 00:47 stuMes.c

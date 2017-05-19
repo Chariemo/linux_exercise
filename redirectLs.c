@@ -1,7 +1,7 @@
 /*************************************************************************
 	> File Name: redirectLs.c
-	> Author: 
-	> Mail: 
+	> Author:
+	> Mail:
 	> Created Time: Fri May 12 09:11:48 2017
  ************************************************************************/
 
@@ -22,13 +22,16 @@ int main(int argc, char * argv) {
         exit(EXIT_FAILURE);
     }
 
-    if ((pid == fork()) < 0) {
+    if ((pid = fork()) < 0) {
         perror("fork");
         exit(EXIT_FAILURE);
     }
     else if (pid == 0) {
         dup2(fd, 1);
-        execlp("ls", "ls", "-l", (void *)0);
+        if (execlp("ls", "ls", "-l", (void *)0) == -1) {
+            perror("execlp");
+            exit(EXIT_FAILURE);
+        }
     }
     else {
         wait(NULL);

@@ -1,7 +1,7 @@
 /*************************************************************************
 	> File Name: rieRedirect.c
-	> Author: 
-	> Mail: 
+	> Author:
+	> Mail:
 	> Created Time: Fri May 12 08:21:12 2017
  ************************************************************************/
 
@@ -30,7 +30,7 @@ int main(int argc, char *argv[]) {
         if ((fd = creat("result.txt", 0644)) < 0) {
             perror("open");
             exit(EXIT_FAILURE);
-        } 
+        }
         dup2(fd, 1);
         dup2(fds[0], 0);
         close(fds[1]);
