@@ -47,3 +47,29 @@ drwxrwxr-x 2 charie charie 4096 5月  17 00:47 simCommand
 -rw-rw-r-- 1 charie charie 2774 5月  17 09:27 rieShell.c
 drwxrwxr-x 2 charie charie 4096 5月  17 00:47 simCommand
 -rw-rw-r-- 1 charie charie 5253 5月  17 00:47 stuMes.c
+total 68
+-rw-r--r-- 1 root root   20 May 12 09:08 infile.txt
+-rw-r--r-- 1 root root 2652 May 19 14:14 list.txt
+-rwxr-xr-x 1 root root 8960 May 19 14:14 redirectLs
+-rw-r--r-- 1 root root  893 May 19 14:14 redirectLs.c
+-rw-r--r-- 1 root root  380 Apr  5 08:39 restart.c
+-rw-r--r-- 1 root root  103 May 12 10:09 result.txt
+-rw-r--r-- 1 root root 1185 Apr 28 10:01 rieDaemon.c
+-rwxr-xr-x 1 root root 9072 May 19 14:14 rieRedirect
+-rw-r--r-- 1 root root 1359 May 19 14:14 rieRedirect.c
+-rw-r--r-- 1 root root 2774 May 19 14:14 rieShell.c
+drwxr-xr-x 2 root root 4096 May  3 09:33 simCommand
+-rw-r--r-- 1 root root 5253 Apr  5 08:39 stuMes.c
+total 68
+-rw-r--r-- 1 root root   20 May 12 09:08 infile.txt
+-rw-r--r-- 1 root root 3287 May 23 17:20 list.txt
+-rwxr-xr-x 1 root root 8960 May 19 14:14 redirectLs
+-rw-r--r-- 1 root root  893 May 19 14:14 redirectLs.c
+-rw-r--r-- 1 root root  380 Apr  5 08:39 restart.c
+-rw-r--r-- 1 root root   51 May 23 17:20 result.txt
+-rw-r--r-- 1 root root 1185 Apr 28 10:01 rieDaemon.c
+-rwxr-xr-x 1 root root 9072 May 19 14:14 rieRedirect
+-rw-r--r-- 1 root root 1359 May 19 14:14 rieRedirect.c
+-rw-r--r-- 1 root root 2774 May 19 14:14 rieShell.c
+drwxr-xr-x 2 root root 4096 May  3 09:33 simCommand
+-rw-r--r-- 1 root root 5253 Apr  5 08:39 stuMes.c
