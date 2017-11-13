@@ -1,0 +1,1 @@
+cmd_/home/charie/linux_exercise/kernel_mod/vtop/vtop.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/charie/linux_exercise/kernel_mod/vtop/vtop.ko /home/charie/linux_exercise/kernel_mod/vtop/vtop.o /home/charie/linux_exercise/kernel_mod/vtop/vtop.mod.o

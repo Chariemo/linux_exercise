@@ -76,7 +76,6 @@ void riels_l(int argc, char *argv[]) {
 
     if (argc == 2) {
         listdir(".");
-        exit(EXIT_SUCCESS);
     }
     if (argc == 3 && argv[1] != NULL) {
         pinfo(argv[2]);

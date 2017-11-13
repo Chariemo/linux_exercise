@@ -1,0 +1,1 @@
+cmd_/home/charie/module/malloc/malloc.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/charie/module/malloc/malloc.ko /home/charie/module/malloc/malloc.o /home/charie/module/malloc/malloc.mod.o
