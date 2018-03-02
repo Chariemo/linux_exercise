@@ -15,10 +15,9 @@ static int __init lkp_init(void) {
     return 0;
 }
 
-static int __exit lkp_exit(void) {
+static void __exit lkp_exit(void) {
 
     printk("<1>GoodBye!");
-    return 0;
 }
 
 module_init(lkp_init);

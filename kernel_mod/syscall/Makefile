@@ -1,4 +1,4 @@
-obj-m := module1.o
+obj-m := audit.o
 CURRENT_PATH := $(shell pwd)
 LINUX_KERNEL := $(shell uname -r)
 LINUX_KERNEL_path := /usr/src/kernels/$(LINUX_KERNEL)

@@ -1,0 +1,1 @@
+cmd_/home/charie/linux_exercise/kernel_mod/test/pc.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/charie/linux_exercise/kernel_mod/test/pc.ko /home/charie/linux_exercise/kernel_mod/test/pc.o /home/charie/linux_exercise/kernel_mod/test/pc.mod.o
